@@ -1,6 +1,11 @@
 div img {
-  padding:20px;
+
   height:80vh;
-  
   width:100%
+}
+
+.rowcontent {
+  padding : 20px;
+  margin-top:20px;
+  border-bottom: 1px ridge gray;
 }

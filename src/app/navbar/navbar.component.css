@@ -17,4 +17,40 @@ nav a {
 nav ul li a{
   color:white
 }
+form input {
+  background-color:#141414;
+  color:gainsboro;
+
+}
+
+input[type="search"],
+select.form-control
+{
+  border:none;
+  border-bottom: 1px solid white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+
+
 

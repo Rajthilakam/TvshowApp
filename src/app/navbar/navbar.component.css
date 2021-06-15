@@ -1,0 +1,20 @@
+body{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+
+}
+
+
+
+
+
+nav a {
+  color:#e53e00;
+  margin-left: 20px;
+}
+
+nav ul li a{
+  color:white
+}
+

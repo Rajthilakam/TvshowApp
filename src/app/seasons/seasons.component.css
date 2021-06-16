@@ -1,10 +1,7 @@
-.rowcontent{
-  min-height: 50px;
-  padding:20px;
-  border-bottom: 1px ridge gray;
-}
-
-.img {
-  height:200px
+.card {
+  border:none;
+  margin-top :20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
 
 }

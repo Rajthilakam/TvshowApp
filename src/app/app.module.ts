@@ -9,6 +9,8 @@ import { BackgroundImageComponent } from './background-image/background-image.co
 import { SeasonsComponent } from './seasons/seasons.component';
 import { EpisodesComponent } from './episodes/episodes.component';
 import { GenreComponent } from './genre/genre.component';
+import { SearchshowComponent } from './searchshow/searchshow.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,13 @@ import { GenreComponent } from './genre/genre.component';
     BackgroundImageComponent,
     SeasonsComponent,
     EpisodesComponent,
-    GenreComponent
+    GenreComponent,
+    SearchshowComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
 
   ],
   providers: [],

@@ -11,6 +11,7 @@ import { EpisodesComponent } from './episodes/episodes.component';
 import { GenreComponent } from './genre/genre.component';
 import { SearchshowComponent } from './searchshow/searchshow.component';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [],

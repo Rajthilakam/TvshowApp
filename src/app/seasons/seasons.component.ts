@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Ishowseason } from '../ishowseason';
+import { ShowdetailService } from '../showdetail.service';
 
 @Component({
   selector: 'app-seasons',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SeasonsComponent implements OnInit {
 
-  constructor() { }
+  seasonsdetail:any = {}
+  //showseason:Ishowseason= {}
+
+
+  constructor(private showdetailservice:ShowdetailService) {
+
+  }
 
   ngOnInit(): void {
+    this.showdetailservice.getshowdetail().subscribe(data => {
+      this.seasonsdetail = data
+      console.log(this.seasonsdetail.season.length)}
+    )
+    //console.log(this.seasonsdetail)
   }
 
 }

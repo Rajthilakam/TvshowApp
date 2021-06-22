@@ -16,7 +16,7 @@ export class ShowdataService {
 
   getshowdata(){
 
-    return this.httpclient.get<Ishowdata[]>('http://api.tvmaze.com/shows').pipe(map(data => this.transformshowdata(data)))
+    //return this.httpclient.get<Ishowdata[]>('http://api.tvmaze.com/shows').pipe(map(data => this.transformshowdata(data)))
 
 // Subscribe to begin listening for async result
 

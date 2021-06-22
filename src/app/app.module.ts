@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';            // <-- required
+
 import { ShowdataService } from './showdata.service';
+import { ShowdetailService } from './showdetail.service';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,10 +25,12 @@ import { FormsModule } from '@angular/forms';
     SeasonsComponent,
     EpisodesComponent,
     GenreComponent,
-    SearchshowComponent
+    SearchshowComponent,
+
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule

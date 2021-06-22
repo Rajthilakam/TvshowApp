@@ -7,8 +7,8 @@ export interface Ishowdetail {
   },
   summary:string,
   genres:string[],
-  _embed:{
-    season:[{
+  _embedded:{
+    seasons:[{
       id:number,
       url:string,
       number:number,

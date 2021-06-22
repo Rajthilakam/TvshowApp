@@ -18,7 +18,7 @@ export class SearchshowComponent implements OnInit {
   constructor(private showdataservice:ShowdataService) { }
 
   ngOnInit(): void {
-      this.showdataservice.getshowdata().subscribe(data => this.showsdetail.push(data))
+      //this.showdataservice.getshowdata().subscribe(data => this.showsdetail = data )
       console.log("in search component")
       console.log(("hi"))
       console.log(this.showsdetail)

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ShowdataService } from './showdata.service';
+//import { ShowdataService } from './showdata.service';
+import { ShowdetailService } from './showdetail.service';
 
 @Component({
   selector: 'app-root',

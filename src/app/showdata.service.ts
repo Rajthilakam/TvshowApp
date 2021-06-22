@@ -16,21 +16,20 @@ export class ShowdataService {
 
   getshowdata(){
 
-    //return this.httpclient.get<Ishowdata[]>('http://api.tvmaze.com/shows').pipe(
-      //map(data => this.transformshowdata(data)))
+    return this.httpclient.get<Ishowdata[]>('http://api.tvmaze.com/shows').pipe(map(data => this.transformshowdata(data)))
 
 // Subscribe to begin listening for async result
 
 
     //console.log("hello")
-    return this.httpclient.get('http://api.tvmaze.com/shows')
+    //return this.httpclient.get('http://api.tvmaze.com/shows')
      //
      //
   }
 
-}
 
-/*
+
+
   transformshowdata(data:Ishowdata[]):Ishowdata[] {
     let shows:Ishowdatas = []
 
@@ -53,4 +52,3 @@ export class ShowdataService {
 
   }
 
-*/

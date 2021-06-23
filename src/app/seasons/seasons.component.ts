@@ -10,19 +10,23 @@ import { ShowdetailService } from '../showdetail.service';
 export class SeasonsComponent implements OnInit {
 
   seasonsdetail:any = {}
-  //showseason:Ishowseason= {}
 
+  season:any = {}
+  
 
-  constructor(private showdetailservice:ShowdetailService) {
+  getseasonid(season:any):void {
+    this.season.id = season.id
+    this.season.number = season.number
+    this.season.url = season.url
+    alert(season.url)
+}
 
-  }
+  constructor(private showdetailservice:ShowdetailService) {}
 
   ngOnInit(): void {
     this.showdetailservice.getshowdetail().subscribe(data => {
       this.seasonsdetail = data
       console.log(this.seasonsdetail.season.length)}
     )
-    //console.log(this.seasonsdetail)
   }
-
 }

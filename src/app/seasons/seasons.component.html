@@ -1,76 +1,63 @@
+
 <div class="container">
   <div class="row ">
+
     <ng-template [ngIf]="seasonsdetail.season?.length">
       <ng-container *ngFor = "let seasons of seasonsdetail.season">
-        <!--<ng-template *ngIf = "seasons.image.medium">-->
-        <div class="col-sm-2 col-md-3 col-lg-3">
-          <ng-container *ngIf="seasons.image.medium; else elseTemplate">
-            <div class="card" data-id='' >
-                <a href= ''><img class="card-img img-fluid " [src]='seasons.image.medium' alt="Seasons"></a>
+
+        <ng-container>
+          <div class="col-sm-2 col-md-3 col-lg-3">
+            <div class="card" data-id=''>
+                <a href= ''><img class="card-img img-fluid " [src]='seasons.image?seasons.image.medium:"assets/img/blackimages.png"' alt="Seasons"></a>
             </div>
             <h4 class="card-title">
               {{seasons.number}}
             </h4>
-          </ng-container>
-        </div>
-
-        <ng-template #elseTemplate>
-
-          <div class="card" data-id='' >
-            <!--<div class="card-body"> -->
-              <h4>Image not Avaliable</h4>
-            <!--</div>-->
           </div>
-          <h4 class="card-title">
-            {{seasons.number}}
-         </h4>
-         
-        </ng-template>
-        <!--</ng-template>-->
+        </ng-container>
+
       </ng-container>
     </ng-template>
 
-    </div>
+  </div>
 </div>
 
+<!--<div class="container">
+  <div class="row">
 
+    <ng-template [ngIf]="seasonsdetail.season?.length">
+      <ng-container *ngFor="let seasons of seasonsdetail.season">
 
- <!---  <div class="col-sm-2 col-md-2 col-lg-2">
-      <div class="card" data-id=''>
-          <a href= ''><img class="card-img-top img-fluid " src="assets/img/season2.jpg" alt="Seasons"></a>
+        <ng-container *ngIf="seasons.image?.medium; else elseTemplate">
+          <div class="col-sm-2 col-md-3 col-lg-3">
+            <div class="card" data-id=''>
+              <a href=''><img class="card-img img-fluid " [src]='seasons.image.medium' alt="Seasons"></a>
+            </div>
+            <h4 class="card-title">
+              {{seasons.number}}
+            </h4>
+          </div>
+        </ng-container>
 
-      </div>
+        <ng-template #elseTemplate>
+          <ng-container>
+            <div class="col-sm-2 col-md-3 col-lg-3">
+              <div class="card" data-id=''>
+                <a href=''><img class="card-img img-fluid " src="assets/img/noimage.png" alt="Seasons"></a>
+              </div>
+              <h4 class="card-title">
+                {{seasons.number}}
+              </h4>
+            </div>
+          </ng-container>
+        </ng-template>
+
+      </ng-container>
+    </ng-template>
   </div>
+</div>-->
 
-  <div class="col-sm-2 col-md-2 col-lg-2">
-    <div class="card" data-id=''>
-        <a href= ''><img class="card-img-top img-fluid " src="assets/img/season3.jpg" alt="Seasons"></a>
 
-    </div>
-  </div>
 
-  <div class="col-sm-2 col-md-2 col-lg-2">
-    <div class="card" data-id=''>
-        <a href= ''><img class="card-img-top img-fluid " src="assets/img/season.jpg" alt="Seasons"></a>
-
-    </div>
-  </div>
-
-  <div class="col-sm-2 col-md-2 col-lg-2">
-    <div class="card" data-id=''>
-        <a href= ''><img class="card-img-top img-fluid " src="assets/img/season2.jpg" alt="Seasons"></a>
-
-    </div>
-  </div>
-
-  <div class="col-sm-2 col-md-2 col-lg-2">
-    <div class="card" data-id=''>
-        <a href= ''><img class="card-img-top img-fluid " src="assets/img/season3.jpg" alt="Seasons"></a>
-
-    </div>
-  </div>
-  </div>
-  </div>
--->
 
 

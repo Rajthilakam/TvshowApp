@@ -14,7 +14,7 @@ export class ShowdetailService {
   getshowdetail() {
     console.log("Am here")
     //return this.httpclient.get<Ishowdata[]>('http://api.tvmaze.com/shows').pipe(map(data => this.transformshowdata(data)))
-        return this.httpclient.get<Ishowdetail>('http://api.tvmaze.com/shows/16?embed[]=seasons').pipe(map( data => this.transformshowdetail(data)))
+        return this.httpclient.get<Ishowdetail>('http://api.tvmaze.com/shows/9?embed[]=seasons').pipe(map( data => this.transformshowdetail(data)))
   }
 
 

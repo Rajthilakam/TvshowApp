@@ -10,9 +10,9 @@ import { SearchshowComponent } from './searchshow/searchshow.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-  { path:'', redirectTo:'/home',  pathMatch: 'full'},
-  {path:'home',component:BackgroundImageComponent},
-  { path:'seasons', component:SeasonsComponent },
+  { path:'', redirectTo:'/show',  pathMatch: 'full'},
+  {path:'show',component:BackgroundImageComponent},
+  { path:'show/:id', component:SeasonsComponent },
   { path:'episodes', component:EpisodesComponent},
   {path:'**',component:PagenotfoundComponent}
 

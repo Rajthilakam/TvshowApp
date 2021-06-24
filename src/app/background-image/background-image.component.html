@@ -3,7 +3,11 @@
 <div class="container">
   <div [class]="'row rowcontent'">
     <div class="col-6">
-      <img [src]="'assets/img/background.jpg'" alt="">
+      <div class="card" data-id='' >
+        <a [routerLink] = "['/show',current.id]"><img class="card-img img-fluid " [src]='current.image'
+          alt="Seasons"></a>
+    </div>
+
     </div>
     <div [class] = "'col-6'">
 
@@ -11,5 +15,8 @@
       fjghdkgfkhjlkfhjlhkgjgk;j
 
     </div>
+    <h2>
+      {{current.id}}
+    </h2>
   </div>
 

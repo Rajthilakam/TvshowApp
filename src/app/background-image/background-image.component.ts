@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BackgroundImageComponent implements OnInit {
 
+  current:any = {
+    id:101,
+    image:'assets/img/background.jpg'
+
+  }
+
+
   constructor() { }
 
   ngOnInit(): void {

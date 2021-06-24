@@ -11,10 +11,11 @@ export class ShowdetailService {
 
   constructor(private httpclient:HttpClient) { }
 
-  getshowdetail() {
+  getshowdetail(id:number) {
     console.log("Am here")
+    console.log(id)
     //return this.httpclient.get<Ishowdata[]>('http://api.tvmaze.com/shows').pipe(map(data => this.transformshowdata(data)))
-        return this.httpclient.get<Ishowdetail>('http://api.tvmaze.com/shows/1?embed[]=seasons').pipe(map( data => this.transformshowdetail(data)))
+        return this.httpclient.get<Ishowdetail>(`http://api.tvmaze.com/shows/${id}?embed[]=seasons`).pipe(map( data => this.transformshowdetail(data)))
   }
 
 

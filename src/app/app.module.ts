@@ -16,6 +16,7 @@ import { GenreComponent } from './genre/genre.component';
 import { SearchshowComponent } from './searchshow/searchshow.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FormsModule } from '@angular/forms';
     EpisodesComponent,
     GenreComponent,
     SearchshowComponent,
+    PagenotfoundComponent,
 
   ],
   imports: [

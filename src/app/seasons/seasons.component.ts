@@ -12,8 +12,9 @@ export class SeasonsComponent implements OnInit {
   seasonsdetail:any = {}
 
   season:any = {}
-  
 
+
+  id:number = 2
   getseasonid(season:any):void {
     this.season.id = season.id
     this.season.number = season.number
@@ -24,7 +25,7 @@ export class SeasonsComponent implements OnInit {
   constructor(private showdetailservice:ShowdetailService) {}
 
   ngOnInit(): void {
-    this.showdetailservice.getshowdetail().subscribe(data => {
+    this.showdetailservice.getshowdetail(this.id).subscribe(data => {
       this.seasonsdetail = data
       console.log(this.seasonsdetail.season.length)}
     )

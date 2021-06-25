@@ -46,7 +46,7 @@
         <div class="row">
           <div class="col-12">
             <p>
-              {{episode.summary | slice:3:(episode.summary.length-4) }}
+              {{episode.summary | slice:3:(episode.summary.length-4) | substrpipe}}
             </p>
           </div>
         </div>

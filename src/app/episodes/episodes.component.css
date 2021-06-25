@@ -2,10 +2,16 @@
   min-height: 50px;
   padding:20px;
   border-bottom: 1px ridge rgb(248, 232, 232);
+
 }
 
 .img {
   height:200px;
- 
+  border:1px ridge gray
+}
 
+
+
+.row{
+  padding:10px;
 }

@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';            // <-- required
 
 import { ShowdataService } from './showdata.service';
 import { ShowdetailService } from './showdetail.service';
+import { EpisodesService } from './episodes.service';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,9 +15,10 @@ import { SeasonsComponent } from './seasons/seasons.component';
 import { EpisodesComponent } from './episodes/episodes.component';
 import { GenreComponent } from './genre/genre.component';
 import { SearchshowComponent } from './searchshow/searchshow.component';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { SubstrpipePipe } from './substrpipe.pipe';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     GenreComponent,
     SearchshowComponent,
     PagenotfoundComponent,
+    SubstrpipePipe,
 
   ],
   imports: [

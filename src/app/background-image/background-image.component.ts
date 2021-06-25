@@ -17,6 +17,8 @@ export class BackgroundImageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    console.log("In background page")
   }
 
 }

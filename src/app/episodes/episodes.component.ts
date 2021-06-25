@@ -18,7 +18,7 @@ export class EpisodesComponent implements OnInit {
     console.log('In episode component')
     this.episodeservice.getepisodedata().subscribe(data => {
       this.episodesdetail = data
-      console.log(this.episodesdetail)
+      console.log(this.episodesdetail[0])
       }
     )
 

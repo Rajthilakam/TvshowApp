@@ -11,9 +11,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   { path:'', redirectTo:'/show',  pathMatch: 'full'},
-  {path:'show',component:EpisodesComponent},
+  {path:'show',component:BackgroundImageComponent},
   { path:'show/:id', component:SeasonsComponent },
-  { path:'episodes', component:EpisodesComponent},
+  { path:'show/:id/:id', component:EpisodesComponent},
   {path:'**',component:PagenotfoundComponent}
 
 ];

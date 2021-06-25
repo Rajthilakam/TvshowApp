@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class BackgroundImageComponent implements OnInit {
 
   current:any = {
-    id:101,
+    id:16,
     image:'assets/img/background.jpg'
 
   }

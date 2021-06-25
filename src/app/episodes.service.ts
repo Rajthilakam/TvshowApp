@@ -14,11 +14,11 @@ export class EpisodesService {
 
   constructor(private httpclient:HttpClient) { }
 
-  getepisodedata() {
+  getepisodedata(id:number) {
 
     console.log("In episode service")
 
-    return this.httpclient.get<Iepisodedetail[]>(` http://api.tvmaze.com/seasons/10/episodes`).pipe(map(data => this.transformepisodedata(data)))
+    return this.httpclient.get<Iepisodedetail[]>(` http://api.tvmaze.com/seasons/${id}/episodes`).pipe(map(data => this.transformepisodedata(data)))
 
     }
 
@@ -39,9 +39,6 @@ export class EpisodesService {
       })
     })
 
-    for(let each of episodelist){
-      console.log((each.summary.slice(3,(each.summary.length-4))))
-    }
     console.log("in episode service")
     console.log(episodelist)
     return episodelist

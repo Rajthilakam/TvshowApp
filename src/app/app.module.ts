@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';            // <-- required
+import { CommonModule } from '@angular/common';
+import { LazyLoadImageModule } from 'ng-lazyload-image';           // <-- required
 
 import { ShowdataService } from './showdata.service';
 import { ShowdetailService } from './showdetail.service';
@@ -14,11 +15,13 @@ import { BackgroundImageComponent } from './background-image/background-image.co
 import { SeasonsComponent } from './seasons/seasons.component';
 import { EpisodesComponent } from './episodes/episodes.component';
 import { GenreComponent } from './genre/genre.component';
-import { SearchshowComponent } from './searchshow/searchshow.component';
+
 import { HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { SubstrpipePipe } from './substrpipe.pipe';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SearchshowComponent } from './searchshow/searchshow.component';
 
 @NgModule({
   declarations: [
@@ -28,9 +31,10 @@ import { SubstrpipePipe } from './substrpipe.pipe';
     SeasonsComponent,
     EpisodesComponent,
     GenreComponent,
-    SearchshowComponent,
+
     PagenotfoundComponent,
     SubstrpipePipe,
+    SearchshowComponent,
 
   ],
   imports: [
@@ -38,7 +42,9 @@ import { SubstrpipePipe } from './substrpipe.pipe';
     CommonModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    SlickCarouselModule,
+    LazyLoadImageModule
 
   ],
   providers: [],

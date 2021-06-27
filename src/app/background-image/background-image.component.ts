@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ShowdataService } from '../showdata.service';
 
 @Component({
   selector: 'app-background-image',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class BackgroundImageComponent implements OnInit {
 
   current:any = {
-    id:16,
+    id:99,
     image:'assets/img/background.jpg'
 
   }

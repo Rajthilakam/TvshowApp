@@ -44,4 +44,8 @@ export class EpisodesComponent implements OnInit {
   ngOnDestroy() {
     this.sub.unsubscribe();
   }
+
+  onBack(): void {
+    this._router.navigate(['show/:id/:id']);
+ }
 }

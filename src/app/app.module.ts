@@ -22,6 +22,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { SubstrpipePipe } from './substrpipe.pipe';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SearchshowComponent } from './searchshow/searchshow.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { SearchshowComponent } from './searchshow/searchshow.component';
     HttpClientModule,
     FormsModule,
     SlickCarouselModule,
-    LazyLoadImageModule
+    LazyLoadImageModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],

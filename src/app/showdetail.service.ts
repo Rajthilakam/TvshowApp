@@ -22,6 +22,7 @@ export class ShowdetailService {
   transformshowdetail(data:Ishowdetail):Ishowseason {
 
       console.log('In transform season service')
+      console.log(typeof(data.id))
 
       return {
 

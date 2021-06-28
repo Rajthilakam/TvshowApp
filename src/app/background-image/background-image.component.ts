@@ -9,7 +9,7 @@ import { ShowdataService } from '../showdata.service';
 export class BackgroundImageComponent implements OnInit {
 
   current:any = {
-    id:99,
+    id:100,
     image:'assets/img/background.jpg'
 
   }

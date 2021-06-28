@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row pt-4 mt-3">
     <div class="col">
-       <a href='#' (click)="onBack()"><h5 >Season-{{episodesdetail[0].season}}</h5></a>
+       <a routerLink="['/show/:id/:id']"><h5 >Season-{{episodesdetail[0].season}}</h5></a>
     </div>
   </div>
 </div>
@@ -19,7 +19,7 @@
         </div>
 
         <div class="col-sm-3 col-md-3">
-          <img 
+          <img
             class="img w-100 rounded"
             [src]='episode.image?episode.image.medium:"assets/img/blackimages.png"'
             alt="Image"

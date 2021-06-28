@@ -17,6 +17,7 @@ export class EpisodesService {
   getepisodedata(id:number) {
 
     console.log("In episode service")
+    console.log(typeof(id))
 
     return this.httpclient.get<Iepisodedetail[]>(` http://api.tvmaze.com/seasons/${id}/episodes`).pipe(map(data => this.transformepisodedata(data)))
 

@@ -44,6 +44,7 @@ export class SeasonsComponent implements OnInit {
       console.log(param)
       console.log(typeof(param))
       this.id = param.get('id')
+      console.log(typeof(this.id))
     })
 
     this.showdetailservice.getshowdetail(this.id).subscribe(data => {

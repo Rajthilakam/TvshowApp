@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ShowdataService } from '../showdata.service';
+import { Router,ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-background-image',
@@ -15,7 +16,8 @@ export class BackgroundImageComponent implements OnInit {
   }
 
 
-  constructor() { }
+  constructor(private _Activatedroute:ActivatedRoute,
+    private _router:Router) { }
 
   ngOnInit(): void {
 

@@ -15,6 +15,7 @@ export class SeasonsComponent implements OnInit {
   season:any = {}
   id:any;
   sub:any;
+  userinput:any= {}
 
   /*
   getseasonid(season:any):void {
@@ -27,7 +28,13 @@ export class SeasonsComponent implements OnInit {
 */
   constructor(private _Activatedroute:ActivatedRoute,
               private _router:Router,
-              private showdetailservice:ShowdetailService) {}
+              private showdetailservice:ShowdetailService) {
+
+
+                //.userinput = this._router.getCurrentNavigation().extras.state
+                //console.log(this.userinput.uservalue)
+
+              }
 
 /*
   ngOnInit(): void {
@@ -39,6 +46,17 @@ export class SeasonsComponent implements OnInit {
 */
 
   ngOnInit():void {
+
+
+    this.sub = this._Activatedroute.paramMap.subscribe(param => {
+      console.log(param)
+      console.log(typeof(param))
+      this.userinput = param.get('id')
+      console.log((this.userinput))
+    })
+
+
+
 
     this.sub = this._Activatedroute.paramMap.subscribe(param => {
       console.log(param)

@@ -17,12 +17,20 @@ import { EpisodesComponent } from './episodes/episodes.component';
 import { GenreComponent } from './genre/genre.component';
 
 import { HttpClientModule} from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { SubstrpipePipe } from './substrpipe.pipe';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SearchshowComponent } from './searchshow/searchshow.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input'
 
 @NgModule({
   declarations: [
@@ -32,7 +40,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SeasonsComponent,
     EpisodesComponent,
     GenreComponent,
-
     PagenotfoundComponent,
     SubstrpipePipe,
     SearchshowComponent,
@@ -43,10 +50,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
     SlickCarouselModule,
     LazyLoadImageModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
+
 
   ],
   providers: [],

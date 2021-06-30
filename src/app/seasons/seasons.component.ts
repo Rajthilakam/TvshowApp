@@ -67,7 +67,8 @@ export class SeasonsComponent implements OnInit {
 
     this.showdetailservice.getshowdetail(this.id).subscribe(data => {
       this.seasonsdetail = data
-      console.log(this.seasonsdetail.season.length)}
+      console.log(this.seasonsdetail)}
+      //console.log(this.seasonsdetail.season.length)}
     )
 
     }

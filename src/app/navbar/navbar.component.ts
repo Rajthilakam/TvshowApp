@@ -31,7 +31,7 @@ export class NavbarComponent implements OnInit {
       if(!this.searchshow.invalid && searchdata) {
         this.userinput = searchdata
         console.log(this.userinput)
-        this._router.navigate(['/show/:id',this.userinput])
+        this._router.navigate(['/show/',this.userinput])
         //this._router.navigate(['/show/:id'],{state:{uservalue:this.userinput}})
 
       }

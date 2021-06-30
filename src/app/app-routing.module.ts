@@ -14,6 +14,7 @@ const routes: Routes = [
   {path:'show',component:BackgroundImageComponent},
   { path:'show/:id', component:SeasonsComponent },
   { path:'show/:id/:id', component:EpisodesComponent},
+  
   {path:'**',component:PagenotfoundComponent}
 
 ];

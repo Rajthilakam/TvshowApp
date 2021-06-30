@@ -10,7 +10,10 @@
   border:1px ridge gray
 }
 
-
+a {
+  color:#FFFAFA;
+  cursor: pointer;
+}
 
 .row{
   padding:10px;

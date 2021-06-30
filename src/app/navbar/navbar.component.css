@@ -74,7 +74,7 @@ input.mat-input-element {
  }
 
  mat-hint {
-  color:gray!important;
+  color:gray;
 }
 
 mat-icon{

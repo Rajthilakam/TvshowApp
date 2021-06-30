@@ -5,3 +5,17 @@
   margin-bottom: 20px;
 
 }
+
+.card-title{
+  color:gray
+}
+
+.season{
+  color:gray;
+  font-family:"Roboto"
+}
+
+.card-img {
+  width: auto;
+  height:auto
+}

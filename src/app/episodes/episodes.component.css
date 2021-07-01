@@ -18,3 +18,8 @@ a {
 .row{
   padding:10px;
 }
+
+h5,p{
+  color:gray
+}
+

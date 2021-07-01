@@ -27,9 +27,25 @@ export class ShowdataService {
      //
   }
 
+  transformshowdata(data:Ishowdata[]):Ishowdata[] {
+    let shows:Ishowdatas = []
 
+    data.map(data => {
+      shows.push({
+        id:data.id,
+        url:data.url,
+        name:data.name,
+        image:data.image,
+        genres:data.genres,
+        summary:data.summary,
+        rating:data.rating,
+      })
+    })
+    return shows
+  }
+}
 
-
+/*
   transformshowdata(data:Ishowdata[]):Ishowdata[] {
     let shows:Ishowdatas = []
 
@@ -51,4 +67,4 @@ export class ShowdataService {
     }
 
   }
-
+*/

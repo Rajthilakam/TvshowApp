@@ -15,7 +15,9 @@ const routes: Routes = [
   { path:'show/:id', component:SeasonsComponent },
   { path:'show/:id/:id', component:EpisodesComponent},
   {path:'tvshows',component:GenreComponent},
-  {path:'**',component:PagenotfoundComponent}
+  {path:'**',component:PagenotfoundComponent},
+  {path:'404',component:PagenotfoundComponent},
+
 
 ];
 

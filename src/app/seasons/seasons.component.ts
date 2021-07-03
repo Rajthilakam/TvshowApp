@@ -55,9 +55,6 @@ export class SeasonsComponent implements OnInit {
       console.log((this.userinput))
     })
 
-
-
-
     this.sub = this._Activatedroute.paramMap.subscribe(param => {
       console.log(param)
       console.log(typeof(param))
@@ -66,12 +63,22 @@ export class SeasonsComponent implements OnInit {
     })
 
     this.showdetailservice.getshowdetail(this.id).subscribe(data => {
-      this.seasonsdetail = data
-      console.log(this.seasonsdetail)}
-      //console.log(this.seasonsdetail.season.length)}
+      if (data !== null){
+        this.seasonsdetail = data
+        console.log(this.seasonsdetail)}
+      else {
+        console.log(data)
+        this._router.navigate(['/404'])
+      }
+
+
+    },
+    error => (this._router.navigate(["404"]))
+      
     )
 
-    }
+  }
+
 
     ngOnDestroy() {
       this.sub.unsubscribe();

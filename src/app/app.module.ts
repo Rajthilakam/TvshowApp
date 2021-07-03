@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
-import { LazyLoadImageModule } from 'ng-lazyload-image';           // <-- required
+import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { HttpClientModule} from '@angular/common/http';          // <-- required
 
 import { ShowdataService } from './showdata.service';
 import { ShowdetailService } from './showdetail.service';
@@ -16,7 +17,7 @@ import { SeasonsComponent } from './seasons/seasons.component';
 import { EpisodesComponent } from './episodes/episodes.component';
 import { GenreComponent } from './genre/genre.component';
 
-import { HttpClientModule} from '@angular/common/http';
+
 
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { SubstrpipePipe } from './substrpipe.pipe';
@@ -34,6 +35,7 @@ import {MatInputModule} from '@angular/material/input'
 import { MatOption, MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldControl } from '@angular/material/form-field';
+import { FormsearchComponent } from './formsearch/formsearch.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,7 @@ import { MatFormFieldControl } from '@angular/material/form-field';
     PagenotfoundComponent,
     SubstrpipePipe,
     SearchshowComponent,
+    FormsearchComponent,
 
   ],
   imports: [

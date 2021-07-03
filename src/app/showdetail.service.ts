@@ -21,6 +21,8 @@ export class ShowdetailService {
 
     getshowdetail(id:string) {
 
+
+      /*
       const regex = /\d/
 
       const doesithavenumber = regex.test(id)
@@ -36,6 +38,20 @@ export class ShowdetailService {
         return this.httpclient.get<Ishowdetail>(`http://api.tvmaze.com/singlesearch/shows?q=${id}&embed[]=seasons`)
         .pipe(map(data =>  this.transformshowdetail(data)) )
       }
+      */
+
+      console.log(id)
+    let reg = /[0123456789]/
+    let url = ''
+    if(reg.test(id)) {
+      console.log(id)
+      // url for id
+      url = `https://api.tvmaze.com/shows/${id}?embed[]=seasons&embed[]=cast`
+    } else {
+      // url for string
+      url = `https://api.tvmaze.com/singlesearch/shows?q=${id}&embed[]=seasons&embed[]=cast`
+    }
+    return this.httpclient.get<Ishowdetail>(url).pipe(map( data => this.transformshowdetail(data)))
     }
 
   transformshowdetail(data:Ishowdetail):Ishowseason {
